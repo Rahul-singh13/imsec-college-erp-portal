@@ -1,74 +1,83 @@
-# IMSEC College ERP Student Portal Clone
+# IMSEC COLLEGE ERP PORTAL
 
+[![JavaScript](https://img.shields.io/badge/Language-JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![React](https://img.shields.io/badge/React-18.x-61DAFB?logo=react&logoColor=black)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Build Status](https://img.shields.io/badge/Build-Passing-brightgreen)](https://github.com/)
+[![Architecture](https://img.shields.io/badge/Architecture-Decoupled_Services-success)](https://github.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-> 🎓 **High-fidelity 100% pixel-perfect educational clone of the IMSEC College ERP Student Portal** (`/academic`). Built for offline reliability, performance, and demonstration of modern modular frontend architecture.
+> 🎓 High-fidelity React 18.3.1 + Vite educational clone of IMSEC College ERP with 29 modules, decoupled mock backend services & vanilla design system.
 
 ---
 
-## 🌟 Key Highlights & Features
+## 🚀 Key Highlights
 
-- 🏛️ **Pixel-Perfect ERP Portal**: Exact replication of IMSEC layout, color palette (#253973 Navy, #F8C12D Yellow active navigation), typography, blinking alerts, and pagination.
-- ⚡ **Decoupled Architecture**: 
-  - Mock database (`src/backend/mockDatabase.js`)
-  - Academic & Finance services (`src/backend/academicService.js`, `src/backend/financeService.js`)
-  - Universal API client (`src/api/apiClient.js`) with seamless switch between local mock data and live REST endpoints.
-- 📱 **All 29 Routes Implemented**: Complete student workflows including Dashboard, Subject-wise Attendance, Fee Receipts, Library Books, Examination Admit Cards, Grievances, Gate Passes, and Hostel Management.
-- 🔒 **Zero Hardcoded Secrets**: Fully sanitized, offline-capable, and secure.
+- 🏛️ **Pixel-Perfect Fidelity**: Engineered with a dedicated Vanilla CSS design system, precise color harmonies, and responsive layouts.
+- ⚡ **Decoupled Architecture**: Separation of presentation layer, API client adapter, and mock business service layer.
+- 🔒 **Sanitized & Offline Capable**: Zero external token dependencies, zero data leakage, and offline reliability.
+- 📱 **Complete Module Coverage**: 29 fully functional views with realistic student workflows and dynamic state.
 
 ---
 
-## 📸 Visual Showcase
+## 📸 Visual Showcase & UI Gallery
 
-### 1. Academic Student Dashboard (`/academic`)
-![Dashboard Showcase](public/screenshots/dashboard.png)
+### 1. Admission
+![Admission](public/screenshots/admission.png)
 
-### 2. Subject-wise Attendance Tracker (`/subject_wise_attendence`)
-![Attendance Showcase](public/screenshots/attendance.png)
+### 2. Attendance
+![Attendance](public/screenshots/attendance.png)
 
-### 3. Digital Library Portal (`/library_book`)
-![Library Showcase](public/screenshots/library.png)
+### 3. Dashboard
+![Dashboard](public/screenshots/dashboard.png)
 
-### 4. Student Admission Details (`/view_admission`)
-![Admission Showcase](public/screenshots/admission.png)
+### 4. Library
+![Library](public/screenshots/library.png)
 
----
+## 🌟 Implemented Modules & Pages (29 Views)
 
-## 🏗️ Architecture & Decoupled Design
+- `AcademicPayment` | `AdmissionProject` | `AdmitCard`
+- `AssignmentList` | `BirthdayList` | `ChangePassword`
+- `CompanyList` | `ComplaintList` | `Dashboard`
+- `DownloadForms` | `Feedback` | `GatePassList`
+- `HostelRequest` | `LibraryBook` | `LogoutPage`
+- `NoDuesList` | `NoticeList` | `OnlineTxn`
+- `RfidRequest` | `ScheduleWiseAttendance` | `Scholarship`
+- `StudentEvent` | `StudentRepresentative` | `SubjectWiseAttendance`
+- `TestMarks` | `TrainingMaterialList` | `UploadDocumentsForm`
+- `ViewAdmission` | `WiFiServices`
+
+## 🏗️ System Architecture
 
 ```mermaid
 graph TD
-    UI[React 18 SPA Components] --> Router[React Router DOM]
-    Router --> Client[API Client Layer]
-    Client --> Backend[Mock Service Layer]
-    Backend --> DB[(Local Mock Database / JSON Store)]
+    UI[Client Application (React 18.3.1)] --> Router[Navigation & Routing Layer]
+    Router --> API[Universal API Client Layer]
+    API --> Backend[Decoupled Business Logic & Services]
+    Backend --> Data[(Local Mock Database / JSON Store)]
 ```
-
 ---
 
-## 🚀 Getting Started
+## 💻 Getting Started
 
 ```bash
-# 1. Clone repository
+# 1. Clone the repository
 git clone https://github.com/Rahul-singh13/imsec-college-erp-portal.git
 
-# 2. Navigate to project
+# 2. Navigate to directory
 cd imsec-college-erp-portal
 
 # 3. Install dependencies
 npm install
 
-# 4. Start local development server
+# 4. Run local development server
 npm run dev
 
-# 5. Build for production
+# 5. Production build & preview
 npm run build
+npm run preview
 ```
 
 ---
 
 ## 📄 License
-MIT License. Created for educational & architectural demonstration purposes.
+MIT License. Created by [Rahul Singh](https://github.com/Rahul-singh13) for educational and architectural demonstration.
