@@ -45,3 +45,5 @@ take_screenshots.js
 *.njsproj
 *.sln
 *.sw?
+
+.agents/
