@@ -1,0 +1,122 @@
+export const mockNotices = [
+  {
+    id: 1,
+    date: "10-Sep-2024",
+    title: "Schedule for Sessional Examination - I (Odd Semester 2024-25)",
+    category: "Examination",
+    publishedBy: "Controller of Examination",
+    isNew: true,
+    isBlinking: true,
+    description: "The Sessional Examination - I for B.Tech 3rd, 5th, and 7th Semester is scheduled to be held from 25th September 2024. All students are advised to check the detailed timetable on the exam notice board.",
+    attachment: "Sessional_Exam_Schedule_2024.pdf",
+    targetAudience: "All B.Tech Students"
+  },
+  {
+    id: 2,
+    date: "08-Sep-2024",
+    title: "Campus Placement Drive: Tata Consultancy Services (TCS Digital/Ninja)",
+    category: "CRC / Placement",
+    publishedBy: "Corporate Resource Centre (CRC)",
+    isNew: true,
+    isBlinking: true,
+    description: "TCS is conducting its National Qualifier Test (NQT) for B.Tech CSE/IT/ECE 2025/2026 batches. Eligible students must complete their online registration before 15th September 2024.",
+    attachment: "TCS_Campus_Drive_Guidelines.pdf",
+    targetAudience: "B.Tech CSE/IT/ECE"
+  },
+  {
+    id: 3,
+    date: "05-Sep-2024",
+    title: "Mandatory 75% Attendance Requirement for Appearing in University Exams",
+    category: "Academic",
+    publishedBy: "Dean Academic Affairs",
+    isNew: false,
+    isBlinking: false,
+    description: "As per AKTU University ordinances, students having less than 75% overall attendance will not be permitted to appear in the End Semester Theory and Practical examinations.",
+    attachment: "AKTU_Attendance_Ordinance.pdf",
+    targetAudience: "All Students"
+  },
+  {
+    id: 4,
+    date: "02-Sep-2024",
+    title: "Submission of Minor Project Synopsis for B.Tech 5th Semester",
+    category: "Academic",
+    publishedBy: "Head of Department (CSE)",
+    isNew: false,
+    isBlinking: false,
+    description: "All 5th-semester students must submit their Minor Project Synopsis signed by their respective project guides on or before 18th September 2024.",
+    attachment: "Minor_Project_Synopsis_Format.docx",
+    targetAudience: "B.Tech CSE Sem 5"
+  },
+  {
+    id: 5,
+    date: "28-Aug-2024",
+    title: "Annual Sports & Cultural Fest 'VIBGYOR 2024' Registration Open",
+    category: "Events",
+    publishedBy: "Student Activity Council",
+    isNew: false,
+    isBlinking: false,
+    description: "Registrations are now open for inter-college sports competitions (Cricket, Football, Badminton, Chess) and Cultural events (Dance, Music, Drama, Coding Hackathon).",
+    attachment: "Vibgyor_2024_Events_Brochure.pdf",
+    targetAudience: "All College Students"
+  },
+  {
+    id: 6,
+    date: "24-Aug-2024",
+    title: "UP Scholarship 2024-25 Online Application and Verification Process",
+    category: "General",
+    publishedBy: "Scholarship Cell",
+    isNew: false,
+    isBlinking: false,
+    description: "Eligible SC/ST/OBC/General category candidates applying for Post-Matric UP Scholarship must submit hard copies of all supporting documents to Room No. 104.",
+    attachment: "UP_Scholarship_Checklist_2024.pdf",
+    targetAudience: "Scholarship Applicants"
+  },
+  {
+    id: 7,
+    date: "20-Aug-2024",
+    title: "Library Book Bank Distribution Schedule for Odd Semester",
+    category: "Academic",
+    publishedBy: "Central Library",
+    isNew: false,
+    isBlinking: false,
+    description: "Book bank sets for 3rd and 5th semester students will be distributed from 22nd August to 30th August 2024 between 10:00 AM to 4:00 PM at the Central Library Counter.",
+    attachment: "Book_Bank_Schedule.pdf",
+    targetAudience: "B.Tech Sem 3 & 5"
+  },
+  {
+    id: 8,
+    date: "15-Aug-2024",
+    title: "Celebration of 78th Independence Day at IMSEC Campus",
+    category: "Events",
+    publishedBy: "Director Office",
+    isNew: false,
+    isBlinking: false,
+    description: "All faculty, staff, and students are cordially invited to attend the Flag Hoisting Ceremony at 8:30 AM in the Central Lawn.",
+    attachment: "Independence_Day_Circular.pdf",
+    targetAudience: "All Campus"
+  },
+  {
+    id: 9,
+    date: "10-Aug-2024",
+    title: "Fee Payment Deadline for Academic Year 2024-25 (Odd Sem)",
+    category: "General",
+    publishedBy: "Accounts Department",
+    isNew: false,
+    isBlinking: false,
+    description: "Students are instructed to clear any remaining tuition/hostel fee balances via the ERP online payment gateway to avoid late fee penalties.",
+    attachment: "Fee_Notice_2024_25.pdf",
+    targetAudience: "All Students"
+  },
+  {
+    id: 10,
+    date: "01-Aug-2024",
+    title: "Placement Preparation Bootcamp: DSA & Full-Stack Web Development",
+    category: "CRC / Placement",
+    publishedBy: "Training & Placement Cell",
+    isNew: false,
+    isBlinking: false,
+    description: "A 4-week intensive training program covering Data Structures, Algorithms, System Design, and Mock Technical Interviews starting next Monday.",
+    attachment: "Placement_Bootcamp_Curriculum.pdf",
+    targetAudience: "Pre-Final & Final Year"
+  }
+];

@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+
+# Production build
+dist/
+dist-ssr/
+build/
+*.local
+
+# Environment & Sensitive Keys
+.env
+.env.*
+!.env.example
+*.token
+*.pem
+*.key
+credentials.json
+mcp_config.json
+
+# Logs & Dumps
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.har
+extracted_*
+
+# Temporary & Scratch scripts
+scratch/
+*_temp.js
+take_screenshots.js
+
+# Editor & OS files
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

@@ -1,0 +1,72 @@
+.table a:link { color: #666; font-weight: normal; text-decoration:none; }
+.table a:visited { color: #999999; font-weight:normal; text-decoration:none; }
+.table a:active, .table a:hover { color: #bd5a35; text-decoration:underline; }
+.table { font-family:Arial, Helvetica, sans-serif; color:#666; font-size:12px; /*text-shadow: 1px 1px 0px #fff;*/ background: #f2f2f2; border:#ccc 1px solid; -moz-box-shadow: 0 1px 2px #d1d1d1; -webkit-box-shadow: 0 1px 2px #d1d1d1; box-shadow: 0 1px 2px #d1d1d1; }
+.table > tbody > tr:nth-child(even) > td { background:#f9f9f9;  text-align:left}
+.table > tbody > tr:nth-child(odd) > td { background:#fff; text-align:left}
+.table th { text-align: left; /*padding:21px 25px ;*/ border-top:1px solid #fafafa; border-bottom:1px solid #e0e0e0; border-left: 1px solid #e0e0e0; background: #fefefe; background: -webkit-gradient(linear, left top, left bottom, from(#fefefe), to(#f2f2f2)); background: -moz-linear-gradient(top,  #fefefe,  #f2f2f2); }
+.table tr:first-child th:last-child { -moz-border-radius-topright:3px; -webkit-border-top-right-radius:3px; border-top-right-radius:3px; }
+.table tr { text-align: left; /*padding-left:20px;*/ }
+.table th { text-align:left !important;}
+.table th:first-child { text-align: left !important; padding-left:20px; border-left: 0; }
+.table td:first-child { text-align: left; padding-left:20px; border-left: 0; }
+
+.table td { padding:18px; border-top: 1px solid #ffffff; border-bottom:1px solid #e0e0e0; border-left: 1px solid #e0e0e0; background: #fbfbfb; }
+.table tr.even td { background: #fff; }
+.table tr:last-child td { border-bottom:0; text-align:left !important;}
+.table tr:hover td { background: #f0f0f0 ; background: -webkit-gradient(linear, left top, left bottom, from(#f0f0f0), to(#f6f6f6)); background: -moz-linear-gradient(top,  #f0f0f0,  #f6f6f6); color:#000; }
+
+@media (min-width:1024px) and (max-width:1208px){
+.table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+  }
+  .table-responsive > .table {
+    margin-bottom: 0;
+  }
+  .table-responsive > .table > thead > tr > th,
+  .table-responsive > .table > tbody > tr > th,
+  .table-responsive > .table > tfoot > tr > th,
+  .table-responsive > .table > thead > tr > td,
+  .table-responsive > .table > tbody > tr > td,
+  .table-responsive > .table > tfoot > tr > td {
+    white-space: nowrap;
+  }
+
+}
+.table-responsive .table {
+	min-width:680px;
+}
+
+
+@media (min-width:1024px) and (max-width:1208px){
+.table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+  }
+  .table-responsive > .table1 {
+    margin-bottom: 0;
+  }
+  .table-responsive > .table1 > thead > tr > th,
+  .table-responsive > .table1 > tbody > tr > th,
+  .table-responsive > .table1 > tfoot > tr > th,
+  .table-responsive > .table1 > thead > tr > td,
+  .table-responsive > .table1 > tbody > tr > td,
+  .table-responsive > .table1 > tfoot > tr > td {
+    white-space: nowrap;
+  }
+
+}
+.table-responsive .table1 {
+	min-width:680px;
+}

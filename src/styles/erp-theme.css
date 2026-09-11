@@ -1,0 +1,669 @@
+/* ==========================================================================
+   IMSEC ERP Student Portal - 1:1 Exact HAR Stylesheet
+   ========================================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.42857143;
+  color: #333333;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #23527c;
+  text-decoration: underline;
+}
+
+/* ==========================================================================
+   Topbar (Exact 1:1 matching extracted_academic.html)
+   ========================================================================== */
+
+.topbar {
+  left: 0px;
+  right: 0;
+  top: 0px;
+  height: 50px;
+  z-index: 1000;
+  background: #253973;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar .topbar-left {
+  float: left;
+  height: 50px;
+  position: relative;
+  z-index: 1;
+  width: 240px;
+  background: #253973;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.topbar .logo {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.topbar .logo h1 {
+  margin: 0;
+  padding: 0;
+  height: 42px;
+  display: flex;
+  align-items: center;
+}
+
+.topbar .logo h1 a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.topbar .logo h1 img {
+  height: 40px;
+  max-width: 190px;
+  object-fit: contain;
+}
+
+.topbar-profile-container {
+  padding-right: 20px;
+  position: relative;
+}
+
+.topbar-profile-btn {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: inherit;
+  padding: 6px 10px;
+}
+
+.topbar-profile-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.topbar-profile-dropdown {
+  position: absolute;
+  top: 45px;
+  right: 15px;
+  background: #ffc839;
+  border: 1px solid #e0ab22;
+  border-radius: 2px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  min-width: 160px;
+  z-index: 1050;
+  padding: 0;
+  margin: 0;
+}
+
+.topbar-profile-dropdown a,
+.topbar-profile-dropdown button {
+  display: block;
+  width: 100%;
+  padding: 10px 14px;
+  color: #253973 !important;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+}
+
+.topbar-profile-dropdown a:hover,
+.topbar-profile-dropdown button:hover {
+  background: #e6b22c;
+  color: #ffffff !important;
+}
+
+.topbar-profile-divider {
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 0;
+}
+
+/* ==========================================================================
+   Left Sidebar (Exact 1:1 matching extracted_academic.html)
+   ========================================================================== */
+
+.left.side-menu {
+  width: 240px;
+  position: fixed;
+  top: 50px;
+  left: 0;
+  bottom: 0;
+  background: #ffffff;
+  border-right: 1px solid #d4d4d4;
+  z-index: 900;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: transform 0.25s ease;
+}
+
+.sidebar-inner {
+  height: 100%;
+}
+
+#sidebar-menu {
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar-menu>ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar-menu>ul>li {
+  border-bottom: 1px solid #e8e8e8;
+  background: #ffffff;
+}
+
+#sidebar-menu>ul>li:nth-child(odd) {
+  background: #f7f9fa;
+}
+
+#sidebar-menu>ul>li>a,
+#sidebar-menu>ul>li>.menu-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 9px 12px;
+  color: #333333;
+  font-size: 12.5px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.1s;
+}
+
+#sidebar-menu>ul>li>a:hover,
+#sidebar-menu>ul>li>.menu-header:hover {
+  background: #edf2f7;
+}
+
+/* Active State: Solid Golden Yellow with 1.5px solid black border */
+#sidebar-menu>ul>li>a.active,
+#sidebar-menu>ul>li>a.active-dashboard {
+  background-color: #F8C12D !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+  border: 1.5px solid #000000 !important;
+  border-radius: 1px;
+}
+
+.menu-item-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.menu-item-left i {
+  color: #1e3570;
+  font-size: 14px;
+}
+
+.sidebar-chevron {
+  color: #777777;
+  font-size: 11px;
+}
+
+/* Submenu dropdown */
+#sidebar-menu ul.sub-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+}
+
+#sidebar-menu ul.sub-menu li a {
+  display: block;
+  padding: 8px 12px 8px 30px;
+  font-size: 12px;
+  color: #253973;
+  text-decoration: none;
+  background: #edf2f7;
+  font-weight: 500;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+#sidebar-menu ul.sub-menu li a:hover {
+  background: #e2e8f0;
+}
+
+#sidebar-menu ul.sub-menu li a.active {
+  background: #F8C12D !important;
+  color: #000000 !important;
+  font-weight: 700 !important;
+  border: 1.5px solid #000000 !important;
+}
+
+/* ==========================================================================
+   Content Page & Top 5 Navy Widgets
+   ========================================================================== */
+
+.content-page {
+  margin-left: 240px;
+  margin-top: 50px;
+  min-height: calc(100vh - 50px);
+  background-color: #ffffff;
+  padding: 10px 15px 30px 15px;
+}
+
+.hamburger-bar {
+  margin-bottom: 8px;
+}
+
+.hamburger-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  display: inline-flex;
+  align-items: center;
+  color: #333333;
+}
+
+/* ==========================================================================
+   Top 5 Widgets (Exact HAR / Screenshot Match)
+   ========================================================================== */
+
+.dues_fee_div {
+  margin-bottom: 15px;
+}
+
+.dues_fee_grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+}
+
+.widget.green-1 {
+  background: #253973 !important;
+  background-color: #253973 !important;
+  color: #ffffff !important;
+  border-radius: 2px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  min-height: 105px;
+  overflow: hidden;
+}
+
+.widget.green-1 .widget-content {
+  padding: 10px 8px 6px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.widget.green-1 .widget-icon {
+  margin-bottom: 4px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.widget.green-1 .widget-icon img {
+  height: 36px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+.widget.green-1 .text-box h2,
+.widget.green-1 h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #ffffff !important;
+  margin: 0;
+  line-height: 1.1;
+}
+
+.widget-footer,
+.widget.green-1 .widget-footer {
+  background: #1c2b57 !important;
+  background-color: #1c2b57 !important;
+  padding: 5px 6px;
+  font-size: 11.5px;
+  color: #ffffff !important;
+  font-weight: 700;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  text-align: center;
+}
+
+.widget-footer b,
+.widget.green-1 .widget-footer b {
+  color: #ffffff !important;
+}
+
+/* ==========================================================================
+   Notice List Section
+   ========================================================================== */
+
+.notice-list-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .notice-title-text {
+    font-size: 26px;
+    color: #333333;
+    margin: 0;
+  }
+
+  .notice-title-text strong {
+    font-weight: 800;
+    color: #333333;
+  }
+
+  .notice-title-text span {
+    font-weight: 300;
+    color: #777777;
+    margin-left: 6px;
+  }
+
+  .blink_me {
+    animation: blinker 2s linear infinite;
+    color: #FF0000;
+    font-size: 22px;
+    font-weight: 800;
+    text-decoration: none !important;
+  }
+
+  .blink_me_sub {
+    animation: blinker 2s linear infinite;
+    color: #FF0000;
+    font-size: 22px;
+    font-weight: 800;
+    text-decoration: none !important;
+    display: block;
+    text-align: center;
+    margin: 6px 0 10px 0;
+  }
+
+  @keyframes blinker {
+    50% {
+      color: yellow;
+    }
+  }
+
+  .btn-print-reg {
+    background-color: #F8C12D;
+    border: 1px solid #e0ab22;
+    color: #111111;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 7px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .btn-print-reg:hover {
+    opacity: 0.9;
+  }
+
+  .notice-search-box {
+    margin-bottom: 10px;
+  }
+
+  .notice-search-box input {
+    width: 240px;
+    padding: 6px 10px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    outline: none;
+  }
+
+  .notice-search-box input:focus {
+    border-color: #337ab7;
+  }
+
+  /* Notice Table */
+  .notice-table-container {
+    width: 100%;
+    overflow-x: auto;
+    border: 1px solid #e0e0e0;
+    margin-bottom: 12px;
+  }
+
+  .notice-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+  }
+
+  .notice-table th {
+    background: #fbfbfb;
+    color: #333333;
+    font-weight: 700;
+    font-size: 13px;
+    padding: 9px 12px;
+    border-bottom: 2px solid #dddddd;
+    border-top: 1px solid #dddddd;
+    text-align: left;
+  }
+
+  .notice-table td {
+    padding: 9px 12px;
+    font-size: 12.5px;
+    border-top: 1px solid #eeeeee;
+    vertical-align: middle;
+    color: #444444;
+  }
+
+  .notice-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .notice-table tbody tr:hover {
+    background-color: #f5f5f5;
+  }
+
+  .badge-new-box {
+    border: 1.5px solid #f2711c;
+    color: #f2711c;
+    font-weight: 800;
+    font-size: 10.5px;
+    padding: 1px 4px;
+    border-radius: 2px;
+    margin-left: 6px;
+    display: inline-block;
+  }
+
+  .btn-group-option {
+    display: inline-flex;
+    gap: 3px;
+  }
+
+  .btn-option-blue {
+    background: #337ab7;
+    border: 1px solid #2e6da4;
+    color: #ffffff;
+    padding: 4px 7px;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    text-decoration: none;
+  }
+
+  .btn-option-blue:hover {
+    background: #286090;
+    color: #ffffff;
+  }
+
+  .erp-pagination-group {
+    display: flex;
+    gap: 4px;
+    margin-top: 12px;
+  }
+
+  .btn-page-red {
+    background: #d9534f;
+    border: 1px solid #d43f3a;
+    color: #ffffff;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .btn-page-red:hover {
+    background: #c9302c;
+  }
+
+  .btn-page-red.active {
+    background: #ac2925;
+  }
+
+  /* Modals */
+  .erp-modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .erp-modal {
+    background: #ffffff;
+    border-radius: 3px;
+    width: 100%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  }
+
+  .erp-modal-header {
+    padding: 10px 16px;
+    background: #253973;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .erp-modal-header h4 {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 700;
+  }
+
+  .erp-modal-close {
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 18px;
+    cursor: pointer;
+  }
+
+  .erp-modal-body {
+    padding: 16px;
+  }
+
+  .erp-modal-footer {
+    padding: 10px 16px;
+    background: #f7f9fa;
+    border-top: 1px solid #e5e5e5;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+
+  .erp-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 3px;
+    cursor: pointer;
+    border: 1px solid transparent;
+  }
+
+  .erp-btn-primary {
+    background: #253973;
+    color: #ffffff;
+  }
+
+  .erp-btn-default {
+    background: #ffffff;
+    border-color: #cccccc;
+    color: #333333;
+  }
+
+  /* Mobile Responsiveness */
+  @media (max-width: 991px) {
+    .left.side-menu {
+      transform: translateX(-100%);
+      width: 250px;
+    }
+
+    .left.side-menu.mobile-open {
+      transform: translateX(0);
+    }
+
+    .content-page {
+      margin-left: 0 !important;
+    }
+
+    .dues_fee_grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .notice-list-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
