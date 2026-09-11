@@ -1,10 +1,10 @@
 # IMSEC COLLEGE ERP PORTAL
 
-[![JavaScript](https://img.shields.io/badge/Language-JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![React](https://img.shields.io/badge/React-18.x-61DAFB?logo=react&logoColor=black)](https://reactjs.org/)
-[![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
-[![Architecture](https://img.shields.io/badge/Architecture-Decoupled_Services-success)](https://github.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![JavaScript](https://img.shields.io/badge/Language-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![React](https://img.shields.io/badge/React-18.x-61DAFB?style=flat-square&logo=react&logoColor=black)](https://reactjs.org/)
+[![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![Architecture](https://img.shields.io/badge/Architecture-Decoupled_Services-2ea44f?style=flat-square)](https://github.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 
 > 🎓 High-fidelity React 18.3.1 + Vite educational clone of IMSEC College ERP with 29 modules, decoupled mock backend services & vanilla design system.
 
@@ -13,7 +13,7 @@
 ## 🚀 Key Highlights
 
 - 🏛️ **Pixel-Perfect Fidelity**: Engineered with a dedicated Vanilla CSS design system, precise color harmonies, and responsive layouts.
-- ⚡ **Decoupled Architecture**: Separation of presentation layer, API client adapter, and mock business service layer.
+- ⚡ **Decoupled Architecture**: Clean separation of presentation layer, API client adapter, and mock business service layer.
 - 🔒 **Sanitized & Offline Capable**: Zero external token dependencies, zero data leakage, and offline reliability.
 - 📱 **Complete Module Coverage**: 29 fully functional views with realistic student workflows and dynamic state.
 
@@ -50,10 +50,10 @@
 
 ```mermaid
 graph TD
-    UI[Client Application (React 18.3.1)] --> Router[Navigation & Routing Layer]
-    Router --> API[Universal API Client Layer]
-    API --> Backend[Decoupled Business Logic & Services]
-    Backend --> Data[(Local Mock Database / JSON Store)]
+    UI["Client Application (React 18.3.1)"] --> Router["Navigation & Routing Layer"]
+    Router --> API["Universal API Client Layer"]
+    API --> Backend["Decoupled Business Logic & Services"]
+    Backend --> Data["(Local Mock Database / JSON Store)"]
 ```
 ---
 

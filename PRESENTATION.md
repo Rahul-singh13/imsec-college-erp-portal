@@ -38,10 +38,10 @@
 ## 🛠️ 3. Architecture & Data Flow
 ```mermaid
 flowchart TD
-    Client[Frontend UI Components] --> Adapter[API Client Layer]
-    Adapter --> Academic[Academic Service]
-    Adapter --> Finance[Finance Service]
-    Academic --> DB[(Mock In-Memory DB)]
+    Client["Frontend UI Components"] --> Adapter["API Client Layer"]
+    Adapter --> Academic["Academic Service"]
+    Adapter --> Finance["Finance Service"]
+    Academic --> DB["(Mock In-Memory DB)"]
     Finance --> DB
 ```
 
