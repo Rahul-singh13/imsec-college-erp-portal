@@ -1,0 +1,16 @@
+{
+  "github-token-guard": {
+    "PreToolUse": [
+      {
+        "matcher": "run_command",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node .agents/plugins/github/scripts/token_manager.js",
+            "timeout": 8
+          }
+        ]
+      }
+    ]
+  }
+}

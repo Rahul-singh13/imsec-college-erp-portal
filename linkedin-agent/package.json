@@ -1,0 +1,25 @@
+{
+  "name": "linkedin-project-agent",
+  "version": "1.0.0",
+  "description": "Global AI Agent to automatically analyze any software project, craft high-reach viral LinkedIn posts with SEO hashtags, select media/screenshots, and publish to LinkedIn with 1-click.",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "bin": {
+    "linkedin-post": "./cli.js"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "cli": "node cli.js",
+    "post": "node cli.js --publish"
+  },
+  "keywords": [
+    "linkedin",
+    "automation",
+    "seo",
+    "developer-branding",
+    "ai-agent",
+    "project-showcase"
+  ],
+  "author": "Rahul Singh",
+  "license": "MIT"
+}
